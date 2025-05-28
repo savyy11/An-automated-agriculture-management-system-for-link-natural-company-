@@ -1,0 +1,229 @@
+/* Task Container */
+.task-container {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  border: 1px solid #e5e7eb;
+}
+
+/* Heading */
+.task-heading {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 2rem;
+  letter-spacing: 0.5px;
+}
+
+/* Error message */
+.error-message {
+  color: #d32f2f;
+  background-color: #fbe9e7;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Open Modal Button */
+.open-modal-button {
+  padding: 12px 18px;
+  font-size: 16px;
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.open-modal-button:hover {
+  background-color: #2563eb;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 500px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal Header */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.modal-header h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.close-modal {
+  background-color: transparent;
+  border: none;
+  padding: 8px;
+  font-size: 24px;
+  color: #1f2937;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.close-modal:hover {
+  background-color: #f1f5f9;
+}
+
+/* Task Form */
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.task-form input,
+.task-form textarea,
+.task-form select {
+  padding: 14px 18px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #f9fafb;
+  transition: all 0.3s ease;
+}
+
+.task-form input:focus,
+.task-form textarea:focus,
+.task-form select:focus {
+  border-color: #3b82f6;
+  background-color: #ffffff;
+  outline: none;
+}
+
+.task-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.task-form button {
+  padding: 12px 18px;
+  font-size: 16px;
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.task-form button:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+}
+
+.task-form button:active {
+  background-color: #1d4ed8;
+  transform: translateY(0);
+}
+
+/* Task List */
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Task Card */
+.task-card {
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  background-color: #f9fafb;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+}
+
+.task-card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.task-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+}
+
+.task-description {
+  font-size: 15px;
+  color: #4b5563;
+  margin-bottom: 12px;
+}
+
+/* Assigned User Name */
+.task-user {
+  font-size: 15px;
+  color: #1e293b;
+  font-weight: 500;
+  margin-top: 0.75rem;
+}
+
+.task-user strong {
+  color: #0f172a;
+  margin-left: 6px;
+}
+
+/* Created Time */
+.task-time {
+  font-size: 14px;
+  color: #475569;
+  margin-top: 0.4rem;
+}
+
+/* Task Status */
+.task-status {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 16px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 0.5rem;
+}
+
+.task-status.pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.task-status.done {
+  background: #d1e7dd;
+  color: #0f5132;
+}
